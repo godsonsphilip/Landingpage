@@ -1,104 +1,76 @@
-/* General page styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f5ef;
+  
+  
 }
 
-/* Navbar styling */
-nav {
+.button{
   display: flex;
-  justify-content: space-between;
-  background-color: #333;
-  padding: 1rem;
-}
-
-nav .logo {
-  color: #fff;
-  font-size: 1.5rem;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 1rem;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Hero section styling */
-.hero {
-  /* background-image: url('./assets/NITRR.png'); */
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7da07e;
   color: #fff;
+  
+  justify-content: space-evenly;
 }
 
-.hero h1 {
-  font-size: 3rem;
+
+.hero-section {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px;
+  border-radius: 10px;
+  color: white; /* Ensure text is visible */
 }
 
-.hero p {
-  font-size: 1.5rem;
-}
 
-.hero button {
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  margin-top: 2rem;
-}
-
-/* Features section styling */
-.features {
-  padding: 2rem;
-  background-color: #f5f5f5;
+.footer {
+  background-color: #2f3731;
+  padding: 1px;
+  color: white;
   text-align: center;
+  font-size: 0.900rem;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
-.features h2 {
-  font-size: 2.5rem;
+
+
+* {
+  margin: 10;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.feature-list {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2rem;
+.App {
+  position: relative;
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden;
 }
 
-.feature-item {
-  width: 30%;
-  background-color: #fff;
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer styling */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
+.background-image {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  bottom: 0;
-}
-
-
-/* .App {
-  background-image: url('./assets/image/NITRR.png');
+  height: 100%;
   background-size: cover;
   background-position: center;
-} */
+  opacity: 0.7; /* Adjust opacity here */
+  z-index: -1; /* Send the background to the back */
+}
 
+.content {
+  position: relative;
+  z-index: 1; /* Bring content to the front */
+  padding: 20px;
+  color: white; /* Adjust text color for visibility */
+}
