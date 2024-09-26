@@ -35,7 +35,7 @@ nav ul li a {
 
 /* Hero section styling */
 .hero {
-  background-image: url('/path/to/your/background.jpg');
+  /* background-image: url('./assets/NITRR.png'); */
   background-size: cover;
   height: 100vh;
   display: flex;
