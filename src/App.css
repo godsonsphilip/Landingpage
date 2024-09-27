@@ -12,49 +12,65 @@ body {
 
 .button{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #7da07e;
+  background-color: #a6caa7;
   color: #fff;
-  
+  opacity: 21px;
   justify-content: space-evenly;
+  right: 2;
 }
 
 
 .hero-section {
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   color: white; /* Ensure text is visible */
+  width: 50%;
+  height: 50%;
 }
 
 
-.footer {
+/* .footer {
   background-color: #2f3731;
-  padding: 1px;
+  padding: 10px;
   color: white;
   text-align: center;
   font-size: 0.900rem;
   margin-top: 1px;
-  margin-bottom: 1px;
-}
+  /* margin-bottom: 1px; */
+ */
 
 
 
 * {
-  margin: 10;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 .App {
-  position: relative;
-  height: 100vh; /* Full height of the viewport */
-  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  min-height: 100vh; /* Ensure the app takes up the full height of the viewport */
+  /* overflow-y: auto;  /* Enables vertical scrolling if content overflows */
+  /* overflow-x: hidden; Avoid horizontal overflow */ 
 }
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background for contrast */
+  color: white; /* Text color for visibility */
+  text-align: center; /* Center the text */
+  padding: 1px; /* Add some padding */
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+
 
 .background-image {
   position: fixed;
@@ -73,4 +89,8 @@ body {
   z-index: 1; /* Bring content to the front */
   padding: 20px;
   color: white; /* Adjust text color for visibility */
+}
+
+.component-spacing {
+  margin-bottom: 3rem; /* Adjust this value to create more or less space */
 }

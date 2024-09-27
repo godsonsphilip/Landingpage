@@ -3,11 +3,26 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="bg-gradient-to-r from-blue-600 to-indigo-600 p-4 shadow-lg w-full">
-      <div className="container mx-auto flex flex-col items-center"> {/* Change to flex-col for vertical alignment */}
+      <div className="container mx-auto flex flex-col items-center"> 
         {/* Logo / Brand */}
-        <h1 className="text-white text-3xl font-bold tracking-wide text-center mb-4"> {/* Added text-center and margin */}
+       <h1
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            fontSize: "3.5rem",
+            fontWeight: "bold",
+            background: "linear-gradient(90deg, #ff7e5f, #feb47b)",
+            WebkitBackgroundClip: "text",
+            color: "black",
+            // animation: "fadeIn 2s ease-out",
+            textAlign: "center",
+            margin: "20px 0",  // Reset margin to avoid extra spacing
+          }}
+        >
           I-Cell Form Builder
         </h1>
+        
 
         {/* Navigation Links */}
         <div className="button flex justify-center"> {/* Center the buttons horizontally */}

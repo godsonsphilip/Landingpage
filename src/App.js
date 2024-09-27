@@ -13,12 +13,25 @@ function App() {
     <div className="App">
       <div
         className="background-image"
-        style={{ backgroundImage: `url(${background})` }} // Set the background image here
+        style={{ backgroundImage: `url(${background})` }}
       ></div>
-      <Navbar />
-      <HeroSection />
-      <Features />
-      <Footer />
+      
+      {/* Spacing between components */}
+      <div className="component-spacing">
+        <Navbar />
+      </div>
+
+      <div className="component-spacing">
+        <HeroSection />
+      </div>
+
+      <div className="component-spacing">
+        <Features />
+      </div>
+
+      <div className="component-spacing">
+        <Footer />
+      </div>
     </div>
   );
 }

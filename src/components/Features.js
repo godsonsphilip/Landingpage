@@ -2,20 +2,70 @@ import React from "react";
 
 const Features = () => {
   return (
-    <div className="container mx-auto my-16">
-      <h2 className="text-3xl text-center font-bold mb-12">Features that Make Us Stand Out</h2>
-      <div className="flex justify-around">
-        <div className="text-center p-6">
-          <h3 className="text-xl font-semibold mb-4">Drag-and-Drop Builder</h3>
-          <p className="text-gray-600">Easily create forms with a drag-and-drop interface.</p>
+    <div style={{ maxWidth: "1200px", margin: "4rem auto" }}>
+      <h2
+        style={{
+          fontSize: "2rem",
+          textAlign: "center",
+          fontWeight: "bold",
+          marginBottom: "3rem",
+        }}
+      >
+        Features that Make Us Stand Out
+      </h2>
+      <div style={{ display: "flex", justifyContent: "space-around", gap: "1rem" }}>
+        {/* Feature 1 - Drag-and-Drop Builder */}
+        <div
+          style={{
+            textAlign: "center",
+            padding: "1.5rem",
+            border: "1px solid #e2e8f0",
+            borderRadius: "8px",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+            width: "30%", // Adjust box size as needed
+            backgroundColor: "beige",
+          }}
+        >
+          <h3 style={{ fontSize: "1.25rem", fontWeight: "600", marginBottom: "1rem" }}>
+            Drag-and-Drop Builder
+          </h3>
+          <p style={{ color: "black" }}>Easily create forms with a drag-and-drop interface.</p>
         </div>
-        <div className="text-center p-6">
-          <h3 className="text-xl font-semibold mb-4">Customizable Templates</h3>
-          <p className="text-gray-600">Choose from a variety of pre-designed templates.</p>
+
+        {/* Feature 2 - Customizable Templates */}
+        <div
+          style={{
+            textAlign: "center",
+            padding: "1.5rem",
+            border: "1px solid #e2e8f0",
+            borderRadius: "8px",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+            width: "30%", // Adjust box size as needed
+            backgroundColor: "beige",
+          }}
+        >
+          <h3 style={{ fontSize: "1.25rem", fontWeight: "600", marginBottom: "1rem" }}>
+            Customizable Templates
+          </h3>
+          <p style={{ color: "black" }}>Choose from a variety of pre-designed templates.</p>
         </div>
-        <div className="text-center p-6">
-          <h3 className="text-xl font-semibold mb-4">Real-Time Responses</h3>
-          <p className="text-gray-600">Receive responses instantly with real-time updates.</p>
+
+        {/* Feature 3 - Real-Time Responses */}
+        <div
+          style={{
+            textAlign: "center",
+            padding: "1.5rem",
+            border: "1px solid #e2e8f0",
+            borderRadius: "8px",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+            width: "30%", // Adjust box size as needed
+            backgroundColor: "beige",
+          }}
+        >
+          <h3 style={{ fontSize: "1.25rem", fontWeight: "600", marginBottom: "1rem" }}>
+            Real-Time Responses
+          </h3>
+          <p style={{ color: "black" }}>Receive responses instantly with real-time updates.</p>
         </div>
       </div>
     </div>
