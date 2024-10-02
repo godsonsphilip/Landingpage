@@ -1,0 +1,143 @@
+html {
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .animation-container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgb(2, 1, 1), #23422c);/* Fallback */
+    /* background: linear-gradient(bottom left, #111, #222); Gradient background for animation */
+    position: relative; /* Allow absolute positioning for inner elements */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Adjust alignment if needed */
+  
+  }
+  
+  @-webkit-keyframes rotateDiscoBall {
+    0% {
+      -webkit-transform: rotateX(90deg) rotateZ(0deg) rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotateX(90deg) rotateZ(360deg) rotate(0deg);
+    }
+  }
+  
+  @keyframes rotateDiscoBall {
+    0% {
+      transform: rotateX(90deg) rotateZ(0deg) rotate(0deg);
+    }
+    100% {
+      transform: rotateX(90deg) rotateZ(360deg) rotate(0deg);
+    }
+  }
+  
+  @-webkit-keyframes rotateDiscoBallMiddle {
+    0% {
+      -webkit-transform: rotateX(90deg) rotateY(0deg) rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotateX(90deg) rotateY(-360deg) rotate(0deg);
+    }
+  }
+  
+  @keyframes rotateDiscoBallMiddle {
+    0% {
+      transform: rotateX(90deg) rotateY(0deg) rotate(0deg);
+    }
+    100% {
+      transform: rotateX(90deg) rotateY(-360deg) rotate(0deg);
+    }
+  }
+  
+  @-webkit-keyframes reflect {
+    0% {
+      -webkit-filter: brightness(60%);
+    }
+    50% {
+      -webkit-filter: brightness(120%);
+    }
+    100% {
+      -webkit-filter: brightness(90%);
+    }
+  }
+  
+  @keyframes reflect {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .discoBall {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    width: 10%;
+    height: 10%;
+    position:center;
+    top: 50px;
+    left: 50%;
+    /* margin-left: -70px; */
+    -webkit-animation: rotateDiscoBall 18s linear infinite;
+    animation: rotateDiscoBall 18s linear infinite;
+  }
+  
+  .discoBallLight {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    margin-left: -50px;
+    margin-top: -50px; /* Center the light on the ball */
+    border-radius: 50%;
+    background-color: rgba(88, 70, 70, 0.7); /* White color with some opacity for luminosity */
+    opacity: 0.8; /* Adjust the opacity to increase luminous effect */
+    -webkit-filter: blur(30px); /* Increase blur for a more luminous effect */
+    filter: blur(30px); /* Increase blur for a more luminous effect */
+    -webkit-animation: rotateDiscoBallLight 18s linear infinite; /* Add rotation animation */
+  animation: rotateDiscoBallLight 18s linear infinite; /* Add rotation animation */
+  }
+  
+  
+  .square {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 6px;
+    height: 6px;
+    transform: rotateX(90deg) rotateY(0deg) translateZ(0px);
+  }
+  
+  .discoBallMiddle {
+    height: 100%;
+    border-radius: 100%;
+    background-color: #111;
+    position: absolute;
+    background: -webkit-linear-gradient(top, #111, #333);
+    background: -moz-linear-gradient(top, #111, #333);
+    background: linear-gradient(top, #111, #333);
+    -webkit-animation: rotateDiscoBallMiddle 18s linear infinite;
+    animation: rotateDiscoBallMiddle 18s linear infinite;
+  }
+  
+  a {
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+  }
+  

@@ -92,5 +92,7 @@ body {
 }
 
 .component-spacing {
-  margin-bottom: 3rem; /* Adjust this value to create more or less space */
+  margin-bottom: 3rem;
+  padding: 20px; /* Adjust this value to create more or less space */
 }
+
