@@ -5,7 +5,7 @@
 /* Custom styles */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f0f5ef;
+  background-color: #e1d2f8;
   
   
 }
@@ -88,11 +88,9 @@ body {
   position: relative;
   z-index: 1; /* Bring content to the front */
   padding: 20px;
-  color: white; /* Adjust text color for visibility */
+  color: rgb(0, 0, 0); /* Adjust text color for visibility */
 }
 
 .component-spacing {
-  margin-bottom: 3rem;
-  padding: 20px; /* Adjust this value to create more or less space */
+  margin-bottom: 3rem; /* Adjust this value to create more or less space */
 }
-

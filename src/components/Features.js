@@ -26,10 +26,10 @@ const Features = () => {
             backgroundColor: "beige",
           }}
         >
-          <h3 style={{ fontSize: "1.25rem", fontWeight: "600", marginBottom: "1rem" }}>
+          <h3 style={{ fontSize: "1.50rem", fontWeight: "600", marginBottom: "1rem" }}>
             Drag-and-Drop Builder
           </h3>
-          <p style={{ color: "black" }}>Easily create forms with a drag-and-drop interface.</p>
+          <p style={{fontSize: "1.10rem", color: "black" }}>Easily create forms with a drag-and-drop interface.</p>
         </div>
 
         {/* Feature 2 - Customizable Templates */}
@@ -44,10 +44,10 @@ const Features = () => {
             backgroundColor: "beige",
           }}
         >
-          <h3 style={{ fontSize: "1.25rem", fontWeight: "600", marginBottom: "1rem" }}>
+          <h3 style={{ fontSize: "1.50rem", fontWeight: "600", marginBottom: "1rem" }}>
             Customizable Templates
           </h3>
-          <p style={{ color: "black" }}>Choose from a variety of pre-designed templates.</p>
+          <p style={{ fontSize: "1.10rem", color: "black" }}>Choose from a variety of pre-designed templates.</p>
         </div>
 
         {/* Feature 3 - Real-Time Responses */}
@@ -62,10 +62,10 @@ const Features = () => {
             backgroundColor: "beige",
           }}
         >
-          <h3 style={{ fontSize: "1.25rem", fontWeight: "600", marginBottom: "1rem" }}>
+          <h3 style={{ fontSize: "1.50rem", fontWeight: "600", marginBottom: "1rem" }}>
             Real-Time Responses
           </h3>
-          <p style={{ color: "black" }}>Receive responses instantly with real-time updates.</p>
+          <p style={{ fontSize: "1.10rem", color: "black" }}>Receive responses instantly with real-time updates.</p>
         </div>
       </div>
     </div>

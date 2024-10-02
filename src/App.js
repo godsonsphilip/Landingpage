@@ -11,11 +11,16 @@ import background from './assets/images/NITRR.png';
 
 function App() {
   const [showRotatingBall, setShowRotatingBall] = useState(true); // State to control animation
+  const [fadeIn, setFadeIn] = useState(false); // State to control fade-in effect
 
-  // Hide the rotating ball after a few seconds (3 seconds in this case)
+  // Hide the rotating ball after a few seconds (5 seconds in this case)
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowRotatingBall(false); // Hide the rotating ball after 3 seconds
+      setShowRotatingBall(false); // Hide the rotating ball after 5 seconds
+      // Delay setting fadeIn to allow for a smooth transition
+      setTimeout(() => {
+        setFadeIn(true); // Trigger fade-in effect for main content after 300ms
+      }, 300);
     }, 5000);
 
     // Cleanup the timer when the component unmounts
@@ -33,21 +38,22 @@ function App() {
             style={{ backgroundImage: `url(${background})` }}
           ></div>
 
-          {/* Spacing between components */}
-          <div className="component-spacing">
-            <Navbar />
-          </div>
+          <div className={`content ${fadeIn ? 'fade-in' : ''}`}> {/* Apply fade-in class conditionally */}
+            <div className="component-spacing">
+              <Navbar />
+            </div>
 
-          <div className="component-spacing">
-            <HeroSection />
-          </div>
+            <div className="component-spacing">
+              <HeroSection />
+            </div>
 
-          <div className="component-spacing">
-            <Features />
-          </div>
+            <div className="component-spacing">
+              <Features />
+            </div>
 
-          <div className="component-spacing">
-            <Footer />
+            <div className="component-spacing">
+              <Footer />
+            </div>
           </div>
         </>
       )}
