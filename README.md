@@ -151,5 +151,4 @@ Contributions are welcome! Here's how you can contribute:
 ---
 
 ## License
-
-This project is licensed under the MIT License. Feel free to use it and modify it for personal or commercial projects. Please see the `LICENSE` file for more information.
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
